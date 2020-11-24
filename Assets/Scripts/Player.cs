@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private int linesCount = 3;
-    [SerializeField] private float horizontalStep = 10f;
+    [SerializeField] private float horizontalStep = 3f;
 
     private int line = 0;
 
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     
     private void Move()
     {
-        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+        transform.Translate(transform.forward * movementSpeed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && line > (-linesCount / 2))
         {
