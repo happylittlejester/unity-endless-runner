@@ -7,7 +7,7 @@ public class Collision : MonoBehaviour
 {
     void OnCollisionEnter ()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
         SceneManager.LoadScene("GameOver");
     }
 }

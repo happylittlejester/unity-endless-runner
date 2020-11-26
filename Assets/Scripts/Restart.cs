@@ -17,5 +17,6 @@ public class Restart : MonoBehaviour
 	void TaskOnClick()
 	{
 		SceneManager.LoadScene("Main");
+		Time.timeScale = 1f;
 	}
 }
