@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class Player : MonoBehaviour
     {
         Move();
     }
-    
-    
+
+
     private void Move()
     {
         transform.Translate(transform.forward * movementSpeed * Time.deltaTime);
